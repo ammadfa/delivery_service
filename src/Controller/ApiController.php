@@ -46,7 +46,8 @@ class ApiController extends AbstractController
                 $deliveryProvider = new PersonalDelivery();
             }
 
-            $deliveryOrder = $deliveryProvider->process($deliveryOrder);
+            $deliveryProvider->setDeliveryOrder($deliveryOrder);
+            $deliveryOrder = $deliveryProvider->process();
 
             $deliveryOrders[] = $deliveryOrder;
 

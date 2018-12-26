@@ -35,7 +35,8 @@ class ApiDeliveryServiceTest extends \Codeception\Test\Unit
                     $deliveryProvider = new \App\Provider\PersonalDelivery();
                 }
 
-                $deliveryOrder = $deliveryProvider->process($deliveryOrder);
+                $deliveryProvider->setDeliveryOrder($deliveryOrder);
+                $deliveryOrder = $deliveryProvider->process();
 
                 $deliveryOrders[] = $deliveryOrder;
 
@@ -65,11 +66,6 @@ class ApiDeliveryServiceTest extends \Codeception\Test\Unit
     }
 
     // tests
-    public function testFetchDummyOrdersPayload()
-    {
-        $this->assertNotNull($this->getFileContents(__DIR__ . '/../../var/data/test_payload.json'));
-    }
-
     public function testProcessDummyOrdersPayloadWithNoCustomerInfo()
     {
         $jsonStringContent = $this->getFileContents(__DIR__ . '/../../var/data/test_payload_no_customer_info.json');

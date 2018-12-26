@@ -11,13 +11,10 @@ use App\Services\OrderFulfillment;
  */
 class PersonalDelivery extends DeliveryBase implements iDelivery {
 
-    public function process(DeliveryOrder $deliveryOrder) {
-        $this->deliveryOrder = $deliveryOrder;
-
+    public function process() {
         $this->preProcess();
 
-        $order_fulfillment = new OrderFulfillment();
-        $this->deliveryOrder = $order_fulfillment->process($this->deliveryOrder);
+        parent::process();
 
         $this->postProcess();
 
