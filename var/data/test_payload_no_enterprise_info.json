@@ -1,0 +1,35 @@
+[
+  {
+    "customer":{
+      "name":"Johnny Bravo",
+      "address":"56 Pitt Street, 2000, Sydney"
+    },
+    "deliveryType":"personalDelivery",
+    "source":"web",
+    "weight":1500
+  },
+  {
+    "customer":{
+      "name":"Jack Ripper",
+      "address":"822 Anzac Parade, 2035, Maroubra"
+    },
+    "deliveryType":"personalDeliveryExpress",
+    "source":"email",
+    "weight":2000,
+    "campaign":{
+      "name":"Christmas2018",
+      "type":"holiday",
+      "ad":"opportunity"
+    }
+  },
+  {
+    "customer":{
+      "name":"Elvis Presley",
+      "address":"333 George Street, 2000, Sydney"
+    },
+    "deliveryType":"enterpriseDelivery",
+    "source":"direct",
+    "onBehalf":"True Capital",
+    "weight":5000
+  }
+]

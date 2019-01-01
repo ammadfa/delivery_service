@@ -1,0 +1,38 @@
+[
+  {
+    "deliveryType":"personalDelivery",
+    "source":"web",
+    "weight":1500
+  },
+  {
+    "deliveryType":"personalDeliveryExpress",
+    "source":"email",
+    "weight":2000,
+    "campaign":{
+      "name":"Christmas2018",
+      "type":"holiday",
+      "ad":"opportunity"
+    }
+  },
+  {
+    "deliveryType":"enterpriseDelivery",
+    "source":"direct",
+    "onBehalf":"True Capital",
+    "enterprise":{
+      "name":"Bayview Motel",
+      "type":"PtyLtd",
+      "abn":"SN123OK",
+      "directors":[
+        {
+          "name":"Michael Jackskon",
+          "address":"242 Bayview, 2434, Sydney"
+        },
+        {
+          "name":"Freddie Mercury",
+          "address":"132 Coast, 2354, Newcastle"
+        }
+      ]
+    },
+    "weight":5000
+  }
+]
