@@ -4,7 +4,7 @@ Delivery service API for processing orders for Personal or Enterprise deliveries
 ## Problem
 
 Design and implement a domain service that will process these three delivery orders
-([JSON can be found here file](var/data/test_payload.json)) and return appropriate types of objects based on the delivery type with
+([JSON file can be found here](var/data/test_payload.json)) and return appropriate types of objects based on the delivery type with
 the following specifications:
 
 - Each delivery type can have a different workflow.
