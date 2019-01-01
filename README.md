@@ -74,7 +74,7 @@ Test #3: Process dummy orders payload
 
 To run the project
 1. Composer must be installed and have to have php 7.2 and above
-2. "composer install" to update vendor dir with necessary libraries
+2. "composer install" to update vendor dir with necessary libraries (vendor dir may need to be created first in the root dir)
 2. "php bin/console server:run" to get the site up and running locally
 4. Then navigate to  "http://127.0.0.1:8000/api/test" to observe the 
 code working as per the business rules stated above in the "Problem".
